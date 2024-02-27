@@ -1,7 +1,9 @@
 from collections import Counter
 
-inputNumbers = list(map(int, input().split()))
-
-if len(set(inputNumbers)) == 1: print(10000 + inputNumbers[0] * 1000)
-elif len(set(inputNumbers)) == 3: print(max(inputNumbers) * 100)
-else: print(1000 + [item for item, count in Counter(inputNumbers).items() if count == 2][0] * 100)
+a, b, c = map(int, input().split())
+if a == b == c: total = 10000 + a * 1000
+elif a == b: total = 1000 + a * 100
+elif a == c: total = 1000 + a * 100
+elif b == c: total = 1000 + b * 100
+else: total = max(a, b, c) * 100
+print(total)
