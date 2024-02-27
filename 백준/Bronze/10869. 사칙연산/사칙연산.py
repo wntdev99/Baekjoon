@@ -1,0 +1,6 @@
+inputNumberOne, inputNumberTwo = map(int, input().split())
+print(inputNumberOne + inputNumberTwo)
+print(inputNumberOne - inputNumberTwo)
+print(inputNumberOne * inputNumberTwo)
+print(int(inputNumberOne / inputNumberTwo))
+print(inputNumberOne % inputNumberTwo)
