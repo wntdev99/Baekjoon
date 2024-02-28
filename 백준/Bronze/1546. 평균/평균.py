@@ -1,4 +1,4 @@
-import sys
-inputString = sys.stdin.readlines()
-inputNumbers = list(map(int, inputString[1].split()))
-print(sum(list(map(lambda x: x / max(inputNumbers) * 100 / int(inputString[0]), inputNumbers))))
+N = int(input())
+Ns = list(map(int, input().split()))
+M = max(Ns)
+print(sum(Ns) / M / N * 100)
