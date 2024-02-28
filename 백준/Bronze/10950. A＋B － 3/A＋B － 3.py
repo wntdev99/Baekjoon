@@ -1,2 +1,1 @@
-for i in range(int(input())):
-    print(sum(list(map(int, input().split()))))
+[print(sum(list(map(int, input().split())))) for i in range(int(input()))]
