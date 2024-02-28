@@ -1,2 +1,3 @@
 import sys
-[print(sum(list(map(int,readLine.split())))) for readLine in sys.stdin.readlines()[1:]]
+for _ in range(int(sys.stdin.readline())):
+    print(sum(map(int, sys.stdin.readline().split())))
