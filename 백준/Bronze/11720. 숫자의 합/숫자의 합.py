@@ -1,5 +1,2 @@
-sum = 0
-input()
-for tmpNum in input():
-    sum += int(tmpNum)
-print(sum)
+import sys
+print(sum(map(int, list(sys.stdin.readlines()[1].strip()))))
